@@ -3,7 +3,7 @@ const arraynumbers2 = [5, 7, 9];
 let resultadoSuma = 0;
 let resultadoSuma2 = 0;
 
-function sumaArrays() {
+export function sumaArrays(arraynumbers1, arraynumbers2) {
   for (let i = 0; i < arraynumbers1.length; i++) {
     let numero = arraynumbers1[i];
     resultadoSuma = resultadoSuma + numero;
@@ -15,7 +15,8 @@ function sumaArrays() {
 
   return resultadoSuma + resultadoSuma2;
 }
-function mostrarResultado() {
-  console.log(sumaArrays());
+export function reset() {
+  resultadoSuma = 0;
+  resultadoSuma2 = 0;
 }
-mostrarResultado();
+reset();
